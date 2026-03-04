@@ -6,14 +6,14 @@ using SindbadTutorials
 const missing_sites_in_data = [ "FI-Lom", "FI-Sod", "GL-ZaF", "GL-ZaH", "RU-Che", "RU-Cok", "RU-Sam", "RU-Tks", "RU-Vrk", "SE-St1", "SJ-Adv", "SJ-Blv", "US-Atq", "US-Ivo", "CA-NS3", "IT-CA1", "IT-SR2", "US-ARb", "US-GBT", "US-Tw1", "US-UMd" ]
 
 function getSiteInfo(site_index)
-    site_info = CSV.File(joinpath(@__DIR__, "../tutorials/experiments/", "settings_WROASTED_HB/site_names_disturbance.csv"); header=true)
+    site_info = CSV.File(joinpath(@__DIR__, "../tutorials/setups/", "WROASTED_HB/site_names_disturbance.csv"); header=true)
     domain = string(site_info[site_index][1])
     y_dist = string(site_info[site_index][2])
     return domain, y_dist
 end
 
 function getSiteIndicesForHybrid(; exclude_sites=missing_sites_in_data)
-    site_info = CSV.File(joinpath(@__DIR__, "../tutorials/experiments/", "settings_WROASTED_HB/site_names_disturbance_pft.csv"); header=true)
+    site_info = CSV.File(joinpath(@__DIR__, "../tutorials/setups/", "WROASTED_HB/site_names_disturbance_pft.csv"); header=true)
     site_indices = 1:length(site_info)
     if !isempty(exclude_sites)
         site_indices = findall(∉(exclude_sites), site_info.site_name)
@@ -22,7 +22,7 @@ function getSiteIndicesForHybrid(; exclude_sites=missing_sites_in_data)
 end
 
 function getSiteIndicesForPFT(; pft=[])
-    site_info = CSV.File(joinpath(@__DIR__, "../tutorials/experiments/", "settings_WROASTED_HB/site_names_disturbance_pft.csv"); header=true)
+    site_info = CSV.File(joinpath(@__DIR__, "../tutorials/setups/", "WROASTED_HB/site_names_disturbance_pft.csv"); header=true)
     site_indices = 1:length(site_info)
     if !isempty(pft)
         site_indices = findall(in(pft), site_info.pft)

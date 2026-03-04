@@ -1,7 +1,7 @@
 {
   "basics": {
     "config_files": {
-      "forcing": "forcing_zarr.json",
+      "forcing": "forcing.json",
       "model_structure": "model_structure_LUE.json",
       "optimization": "optimization.json"
     },

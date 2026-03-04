@@ -9,7 +9,7 @@ site_index_end = 205
 
 domain = "FLUXNET"
 # experiment info
-experiment_json = "../ellis_jena_2025/settings_WROASTED_HB/experiment_insitu.json"
+experiment_json = "./setups/WROASTED_HB/experiment_insitu.json"
 experiment_name = "WROASTED_global_inversion_CMAES"
 begin_year = 1979
 end_year = 2017
@@ -41,11 +41,11 @@ forcing = getForcing(info);
 pfts = forcing.data[findall(x -> x == :f_pft, forcing.variables)[1]]
 pft_sites = pfts.site
 site_info = CSV.File(joinpath(@__DIR__,
-        "settings_WROASTED_HB/site_names_disturbance.csv");
+        "setups/WROASTED_HB/site_names_disturbance.csv");
     header=true)
 
 header = "site_name,disturbance,pft\n"
-open(joinpath(@__DIR__, "settings_WROASTED_HB/site_names_disturbance_pft.csv"), "w") do io
+open(joinpath(@__DIR__, "setups/WROASTED_HB/site_names_disturbance_pft.csv"), "w") do io
     write(io, header)
     foreach(site_info) do site
         site_name = string(site[1])
