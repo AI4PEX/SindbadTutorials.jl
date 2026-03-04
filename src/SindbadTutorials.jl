@@ -10,4 +10,6 @@ using PlutoUI
 @reexport using Dates
 @reexport using Sindbad
 @reexport using AWSS3
+
+include("tutorial_helpers.jl")
 end # module SindbadTutorials
