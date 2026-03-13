@@ -18,7 +18,7 @@ The main objectives of this challenge are to:
 4. Identify the key factors and controls that influence the generalization of parameters in hybrid models, and develop strategies to overcome limitations in parameter generalization.
 
 ## Two valid tasks
-1. Develop a hybrid model that learns the parameters of a light use efficiency model of GPP, and evaluate its performance in predicting GPP across different locations and time scales using a global open dataset. Explore different combinitions of static covariates (e.g., plant functional types, soil properties) to improve the generalizability of the model.
+1. Develop a hybrid model that learns the parameters of a light use efficiency model of GPP, and evaluate its performance in predicting GPP across different locations and time scales using a global open dataset. Explore different combinitions of static covariates (e.g., plant functional types, soil properties) to improve the generalizability of the model. Examples could be found in [Task01_LUE_inversion_XuShan.ipynb](https://colab.research.google.com/drive/1swNUrN8pFUErDJXaNIaeJ8RtF454j9ny#scrollTo=39231d4c).
 2. Develop a hybrid model that learns the sensitivity of GPP to air temperature, and evaluate its performance in predicting GPP across different locations and time scales using a global open dataset. Explore different ML architectures (e.g., feedforward neural networks, recurrent neural networks) to improve the generalizability of the model.
 
 ## Getting the repo
