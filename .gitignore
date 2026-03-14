@@ -37,6 +37,7 @@
 *.xlsx
 .*
 ~*
+!.gitkeep
 *_tmp
 tmp_*
 tmp*
