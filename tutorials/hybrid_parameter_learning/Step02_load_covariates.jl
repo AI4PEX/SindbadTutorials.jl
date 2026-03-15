@@ -130,7 +130,7 @@ replace_info = Dict(
     "optimization.optimization_cost_threaded" => false,
     "optimization.optimization_parameter_scaling" => nothing,
     "hybrid.ml_training.fold_path" => nothing,
-    "experiment.basics.config_files.hybrid" => "parameter_learning_LUE_newCovariates.json",
+    "experiment.basics.config_files.hybrid" => "../LUE_newCovariates/parameter_learning_LUE_newCovariates.json",
     );
 
 # generate the info and other helpers
