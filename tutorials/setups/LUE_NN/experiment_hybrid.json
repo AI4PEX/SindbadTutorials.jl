@@ -1,10 +1,10 @@
 {
   "basics": {
     "config_files": {
-      "forcing": "forcing.json",
-      "hybrid": "parameter_learning_LUE.json",
-      "model_structure": "model_structure_LUE.json",
-      "optimization": "optimization.json"
+      "forcing": "../LUE/forcing.json",
+      "hybrid": "../LUE/parameter_learning_LUE.json",
+      "model_structure": "model_structure_LUE_externalNN.json",
+      "optimization": "optimization_externalNN.json"
     },
     "domain": "FLUXNET",
     "name": "LUE",
